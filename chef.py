@@ -1,6 +1,7 @@
 import pika
 import time
 
+# Create the connection to the server
 connection = pika.BlockingConnection(pika.ConnectionParameters(
         host='localhost'))
 channel = connection.channel()
